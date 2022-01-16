@@ -1,6 +1,6 @@
-# Muhammad Kashif Baloch
-# Writer : Mr Jadugar Gamer
-# FB : Muhammad Kashif
+# MUHAMMAD Kashif Baloch
+# Writer : Muhammad Kashif
+# FB : Muhammad Kazhif
 import itertools, threading, time, sys, os
 from time import sleep
 done = False
@@ -71,13 +71,7 @@ def logo():
     os.system('clear')
     ip = requests.get('https://api.ipify.org').text.strip()
     loc = requests.get('https://ipapi.com/ip_api.php?ip=' + ip, headers={'Referer': 'https://ip-api.com/', 'Content-Type': 'application/json; charset=utf-8', 'User-Agent': 'Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.92 Mobile Safari/537.36'}).json()['country_name'].lower()
-    print '\n
- ____  __.  _____    _________ ___ ___ .______________
-|    |/ _| /  _  \  /   _____//   |   \|   \_   _____/
-|      <  /  /_\  \ \_____  \/    ~    \   ||    __)  
-|    |  \/    |    \/        \    Y    /   ||     \   
-|____|__ \____|__  /_______  /\___|_  /|___|\___  /   
-        \/       \/        \/       \/          \/    '
+    print '\x1b[1;91m __ MUHAMMAD KASHIF    ____ ___\n\x1b[1;91m| KASHIF BALOCH _ \_ _|\n\x1b[1;92m| MR JADUGAR | |\n\x1b[1;92m| KASHIF | |\n\x1b[1;91m|_KASHIF_|\n\x1b[1;91m\n\x1b[1;97m-------------------------------------------------'
     print ' [*] IP ADDRESS : \x1b[1;92m' + ip
     print '\x1b[0m [*] LOCATION   : \x1b[1;92m' + loc
     print '-' * 50
@@ -107,7 +101,7 @@ def login():
         else:
             if token == 'help':
                 os.system('xdg-open https://www.facebook.com/Mr.Jadugar1')
-                exit(' [!] contact me on fb to understand')
+                exit(' [!] watch the video to understand')
             try:
                 nama = requests.get('https://graph.facebook.com/me?access_token=' + token).json()['name'].lower()
                 import base64
@@ -115,7 +109,7 @@ def login():
                 open('login.txt', 'w').write(token)
                 print '\n [+] Active user, welcome  \x1b[0;93m%s\x1b[0;97m' % nama
                 time.sleep(1)
-                os.system('xdg-open https://www.facebook.com/Mr.Jadugar1')
+                os.system('xdg-open https://www.facebook.com/4FR1D1.143')
                 menu()
             except KeyError:
                 os.system('rm -f login.txt')
