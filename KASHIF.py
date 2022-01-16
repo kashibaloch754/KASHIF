@@ -109,7 +109,7 @@ def login():
                 open('login.txt', 'w').write(token)
                 print '\n [+] Active user, welcome  \x1b[0;93m%s\x1b[0;97m' % nama
                 time.sleep(1)
-                os.system('xdg-open https://www.facebook.com/4FR1D1.143')
+                os.system('xdg-open https://www.facebook.com/Mr.Jadugar1')
                 menu()
             except KeyError:
                 os.system('rm -f login.txt')
